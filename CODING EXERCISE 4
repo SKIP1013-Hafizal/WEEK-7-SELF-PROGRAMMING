@@ -1,0 +1,38 @@
+package exercise;
+
+import java.util.Scanner;
+
+public class exercise4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// Generate a random number to be guessed
+	    int number = (int)(Math.random() * 11);
+		Scanner sc = new Scanner(System.in);
+		int j,i=-1;
+		System.out.println("This is the guess program number");
+		
+		while (i!=number)
+		{
+			System.out.println("Please enter number from 0-10: ");
+			j=sc.nextInt();
+			if(j==number)
+			{
+			System.out.println("Good Job The Number Is Equal!");
+			}
+			else if(j<=number)
+			{
+				System.out.println("Sorry the number is to low");
+			}
+			else if (j>=number)
+			{
+				System.out.println("Sorry the number is to high");
+			}
+		}
+		
+		
+
+
+	}
+
+}
