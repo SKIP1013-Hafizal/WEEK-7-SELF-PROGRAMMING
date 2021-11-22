@@ -1,0 +1,11 @@
+This is the guess program number
+Please enter number from 0-10: 
+5
+Sorry the number is to low
+Please enter number from 0-10: 
+6
+Sorry the number is to low
+Please enter number from 0-10: 
+7
+Good Job The Number Is Equal!
+Please enter number from 0-10: 
