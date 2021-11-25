@@ -1,0 +1,49 @@
+package exercise;
+
+import java.util.Scanner;
+
+public class banksystem {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		int accnum,pass;
+		String name;
+		int password=123456;
+		
+		System.out.println("Please enter your name : ");
+		name=sc.nextLine();
+		System.out.println("Please enter your account number : ");
+		accnum=sc.nextInt();
+		System.out.println("Please enter your account password : ");
+		pass=sc.nextInt();
+		
+		if (pass==password)
+		{
+			System.out.println("************************************************");
+			System.out.println("WELCOME TO BANK "+name);
+			System.out.println("************************************************");
+		}
+		if(pass!=password)
+		{
+				for(int x=0;x<3;x++)
+				{
+				System.out.println("Please re-enter your password : ");
+				pass=sc.nextInt();
+				x=x+1;
+				}
+			System.out.println("YOUR ACCOUNT HAS BEEN BLOCKED");
+		}
+			
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}
