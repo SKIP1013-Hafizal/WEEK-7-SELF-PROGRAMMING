@@ -1,0 +1,36 @@
+package exercise;
+
+import java.util.Scanner;
+
+public class phonepassword {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner sc = new Scanner(System.in);
+		
+		int accnum,pass;
+		int password=0000;
+		
+		System.out.println("Please enter your phone password : ");
+		pass=sc.nextInt();
+		
+		if (pass==password)
+		{
+			System.out.println("-----------------------------------");
+			System.out.println("unlocked");
+			System.out.println("-----------------------------------");
+		}
+		if(pass!=password)
+		{
+				for(int x=0;x<3;x++)
+				{
+				System.out.println("Please re-enter your password : ");
+				pass=sc.nextInt();
+				x=x+1;
+				}
+			System.out.println("YOUR PHONE HAS BEEN BLOCKED");
+		}
+
+	}
+
+}
