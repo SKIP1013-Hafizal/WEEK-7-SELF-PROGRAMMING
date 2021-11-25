@@ -1,0 +1,48 @@
+package exercise;
+
+import java.util.Scanner;
+
+public class vendingmachine {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		double price;
+		double money;
+		double balance;
+		double addmoney;
+		
+		System.out.println("Please enter the price of the item RM: ");
+		price=sc.nextDouble();
+		System.out.println("Please enter the amount of money RM: ");
+		money=sc.nextDouble();
+		
+		if (money>=price)
+		{
+			balance=money-price;
+			System.out.println("Thankyou please collect your item");
+			System.out.printf("Your balance is RM: %.2f",balance);
+		}
+		if (money<price)
+		{
+			{
+			System.out.println("Please add amount of money RM: ");
+			addmoney=sc.nextDouble();
+			money=addmoney+money;
+			if (money>=price)
+			{
+				balance=money-price;
+				System.out.println("Thankyou please collect your item");
+				System.out.printf("Your balance is RM: %.2f",balance);
+			}
+			}
+		}
+		
+		
+		
+		
+
+	}
+
+}
