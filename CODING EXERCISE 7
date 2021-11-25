@@ -1,0 +1,46 @@
+package exercise;
+
+import java.util.Scanner;
+
+public class tollplaza {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        Scanner sc = new Scanner(System.in);
+		
+		double price;
+		double touchngo;
+		double balance;
+		double addmoney;
+		
+		System.out.println("Please enter the price of the journey: ");
+		price=sc.nextDouble();
+		System.out.println("Please enter your touch&go balance: ");
+		touchngo=sc.nextDouble();
+		
+		if (touchngo>=price)
+		{
+			balance=touchngo-price;
+			System.out.printf("Your balance is RM: %.2f",balance);
+			System.out.println("");
+			System.out.println("Thankyou! Have a safe journey");
+		}
+		if (touchngo<price)
+		{
+			{
+			System.out.println("Please topup your touch&go: ");
+			addmoney=sc.nextDouble();
+			touchngo=addmoney+touchngo;
+			if (touchngo>=price)
+			{
+				balance=touchngo-price;
+				System.out.printf("Your balance is RM: %.2f",balance);
+				System.out.println("");
+				System.out.println("Thankyou! Have a safe journey");
+			}
+			}
+		}
+
+	}
+
+}
